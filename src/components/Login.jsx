@@ -109,7 +109,7 @@ export default function Login() {
           invalid={errors.email}
           data-cy="email"
         />
-        {errors.email && <FormFeedback>{errorMessages.email}</FormFeedback>}
+        {errors.email && <FormFeedback data-cy="emailerror">{errorMessages.email}</FormFeedback>}
       </FormGroup>
       <FormGroup>
         <Label for="examplePassword">Password</Label>
@@ -124,7 +124,7 @@ export default function Login() {
           data-cy="password"
         />
         {errors.password && (
-          <FormFeedback>{errorMessages.password}</FormFeedback>
+          <FormFeedback data-cy="passworderror">{errorMessages.password}</FormFeedback>
         )}
       </FormGroup>
       <FormGroup check>
